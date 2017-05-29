@@ -468,10 +468,28 @@ flagtempsensitiveWHC        1
 flagtempsensitiveWHM        1
 flagtempsensitiveCEP        1
 flagtempsensitiveKR         1
+flagtempsensitiveIPL        0
+flagtempsensitiveIDF        0
+flagtempsensitivePCO        0
+flagtempsensitivePPS        0
+flagtempsensitivePPL        0
+flagtempsensitivePDF        0
+flagtempsensitiveIZ         0
+flagtempsensitiveZS         0
+flagtempsensitiveZM         0
+flagtempsensitiveZL         0
+flagtempsensitiveZG         0
+flagtempsensitiveBD         0
+flagtempsensitiveBM         0
+flagtempsensitiveBF         0
+flagtempsensitivePB         0
+flagtempsensitiveBB         0
+flagtempsensitiveIB         0
 
 # Habitat dependency
 flag_benthos_sediment_link 0  flag indicating whether growth of benthos is scaled based on bottom types (1) or not (0)
 flag_competing_epiff 0        flag indicating whether corals, filter feeders and macrophytes compete for space
+flagconstrain_epiwander 0     flag to indicate whether to constrain epibenthic biomass pool groups to the distribution in the initial conditions file or let them occupy any cell that meets their tolerances based on the temperature, salinity, oxygen and depth settings
 flag_invert_biohab 0          flag indicating whether inverebrates use dynamic biohabitat to condition growth
 flag_rel_cover  0  to show ehther using cumulative habitat (0) or average relative cover (1) when interacting with predators
 
@@ -4566,6 +4584,9 @@ min_rugosity 1
 max_rugosity 5
 rugosity_const 1.2    # was 0.88 from Bozec et al 2014 but to allow for box wide effects this has been retuned here.
 swr_scalar       0.45      # Proportion of shortwave radiation available to photosynthesis
+swr_const        1367.0  #  Constant in the equation for the shortwave radiation available to photosynthesis
+swr_cos_coefft      0.034   #  Coefficient of the cos term in the equation for the shortwave radiation available to photosynthesis 
+swr_cos_offset      0.0      #  Offset term in the cos term in the equation for the shortwave radiation available to photosynthesis
 flag_do_var_express 0
 flag_do_evolution     0        Whether do evolution (1) or not (0)                                      0
 flag_mult_grow_curves 0        Whether using mutiple growth curves not evolution per se (1) or not (0)  0        
