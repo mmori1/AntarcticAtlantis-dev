@@ -1,0 +1,10 @@
+standard output folder for Atlantis runs
+
+- only put large outputs in there, they won't be versioned by Git
+
+:w
+
+B
+
+A
+
