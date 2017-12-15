@@ -8326,3 +8326,12 @@ flagq10receffWHA 0
 flagq10receffWHB 0
 flagq10receffWHC 0
 flagq10receffWHO 0
+
+norm_larval_distrib 0
+larvae_connect_only 0
+enviro_independ_larvae 0
+
+InvadersEntering 0
+
+flag_recruit_effect 1 #set to 1 for the environmental effects to be calculated at the time the recruits settle
+flag_dynamicXRS 0 #Flag to indicate whether to use dynamic (1) or static (0) X_RS value

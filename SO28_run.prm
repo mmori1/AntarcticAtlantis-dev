@@ -174,4 +174,6 @@ init_scalar 43
 #
 track_contaminants 0
 flag_replicated_old 1
+flag_old_embryo_init 0
+flag_replicate_old_calendar 0
 check_dups 0
